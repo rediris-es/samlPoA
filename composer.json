@@ -1,0 +1,20 @@
+{
+    "name": "rediris-es/samlpoa",
+    "description": "SAML phpPoA replacement",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jorge López Pérez",
+            "email": "jorge@jorgelp.com"
+        }
+    ],
+    "require": {
+        "onelogin/php-saml": "^2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "RedIRIS\\SamlPoA\\": "lib/"
+        }
+    }
+}
