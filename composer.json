@@ -2,7 +2,7 @@
     "name": "rediris-es/samlpoa",
     "description": "SAML phpPoA replacement",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL-3.0+",
     "authors": [
         {
             "name": "Jorge López Pérez",
