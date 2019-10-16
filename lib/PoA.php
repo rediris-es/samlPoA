@@ -20,24 +20,24 @@
 
 namespace RedIRIS\SamlPoA;
 
-use \OneLogin_Saml2_Auth;
+use \OneLogin\Saml2\Auth;
 
 class PoA
 {
     /** @var Array */
     protected $settings;
 
-    /** @var \OneLogin_Saml2_Auth */
+    /** @var \OneLogin\Saml2\Auth */
     protected $auth;
 
     /** @var RedIRIS\SamlPoA\Authz\AuthorizationEngine[] */
     protected $authz_engines;
 
     /**
-     * @param \OneLogin_Saml2_Auth $auth
+     * @param \OneLogin\Saml2\Auth $auth
      * @param Array $settings
      */
-    public function __construct(\OneLogin_Saml2_Auth $auth, Array $settings)
+    public function __construct(\OneLogin\Saml2\Auth $auth, Array $settings)
     {
         $this->auth = $auth;
         $this->settings = $settings;
