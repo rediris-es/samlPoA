@@ -151,7 +151,7 @@ class PoA
             ];
 
             if (isset($_POST['RelayState'])
-                && \OneLogin_Saml2_Utils::getSelfURL() != $_POST['RelayState']) {
+                && \OneLogin\Saml2\Utils::getSelfURL() != $_POST['RelayState']) {
                 $this->auth->redirectTo($_POST['RelayState']);
             }
 
@@ -274,7 +274,7 @@ class PoA
 
         // Just remove local session information
         if ($slo === false) {
-            \OneLogin_Saml2_Utils::deleteLocalSession();
+            \OneLogin\Saml2\Utils::deleteLocalSession();
             return true;
         }
 
