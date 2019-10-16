@@ -24,7 +24,7 @@ class Builder
 {
     public static function poa(Array $settings)
     {
-        $auth = new \OneLogin\Saml2|Auth($settings);
+        $auth = new \OneLogin\Saml2\Auth($settings);
 
         return new PoA(
             $auth,
