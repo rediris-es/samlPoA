@@ -8,7 +8,6 @@ A PHP library with a [phpPoA](http://papi.rediris.es/php/) compatible API for SA
 
 * PHP 5.3.3 or later
 * `openssl` module
-* `mcrypt` module
 * `curl` module
 
 ### Installing
