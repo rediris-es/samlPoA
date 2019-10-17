@@ -21,15 +21,15 @@
 
 namespace RedIRIS\SamlPoA;
 
-use \OneLogin_Saml2_Auth;
+use \OneLogin\Saml2\Auth;
 
 class AutoPoA extends PoA
 {
     /**
-     * @param \OneLogin_Saml2_Auth $auth
+     * @param \OneLogin\Saml2\Auth $auth
      * @param Array $settings
      */
-    public function __construct(\OneLogin_Saml2_Auth $auth, Array $settings)
+    public function __construct(\OneLogin\Saml2\Auth $auth, Array $settings)
     {
         parent::__construct($auth, $settings);
 

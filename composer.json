@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "onelogin/php-saml": "^2.11"
+        "onelogin/php-saml": "^3.3"
     },
     "autoload": {
         "psr-4": {
