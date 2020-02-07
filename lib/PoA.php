@@ -160,7 +160,7 @@ class PoA
         }
 
         try {
-            $sso_url = $this->auth->login(null, array(), false, false, true);
+            $sso_url = $this->auth->login($_SERVER['REQUEST_URI'], array(), false, false, true);
             $_SESSION['AuthNRequestID'] = $this->auth->getLastRequestID();
 
             header('Pragma: no-cache');
