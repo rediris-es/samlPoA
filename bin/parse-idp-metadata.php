@@ -7,7 +7,7 @@ if (count($argv) != 2) {
     die(255);
 }
 
-$metadata = \OneLogin_Saml2_IdPMetadataParser::parseFileXML($argv[1]);
+$metadata = \OneLogin\Saml2\IdPMetadataParser::parseFileXML($argv[1]);
 
 echo "'idp' => ";
 var_export($metadata['idp']);
